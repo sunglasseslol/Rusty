@@ -1,0 +1,17 @@
+{
+  "name": "rusty",
+  "version": "1.0.0",
+  "description": "Gives helpful information about Rust",
+  "main": "rusty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sunglasses#0420",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "mongoose": "^5.11.14",
+    "node-fetch": "^2.6.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
