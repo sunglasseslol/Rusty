@@ -874,7 +874,7 @@ module.exports = {
         if(args[0] == 'spas' || args[0] == 'spas' && args[1] == '12') {
             message.channel.send({embed : spasembed})
             .then(console.log(spasembed))
-            .catch(console.eroor)
+            .catch(console.error)
         }
     }
 }
