@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
-let prefix = '.';
+const prefix = '.';
 client.commands = new Discord.Collection();
  
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -24,5 +24,4 @@ client.on('message', message => {
     client.commands.get('./pp.js')?.execute(message, args);
 });
 
-module.exports = { prefix }
 client.login('ODA2MDg0ODUzNTA1MzI3MTE0.YBkTBQ.Lkg6XTHf2vzXdPDXy6sUcS_TlP0');
