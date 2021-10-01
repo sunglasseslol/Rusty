@@ -22,7 +22,8 @@ module.exports = {
                     let data = JSON.stringify(res);
                     message.channel.send(data)
                 }) 
-                .then(posts => console.log(posts));
+                .then(posts => console.log(posts))
+                .catch(console.error);
                 
         }
         getPosts();
