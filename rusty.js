@@ -12,7 +12,6 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Rusty is online!');
-    console.log('tes');
 });
  
 client.on('message', message => {
@@ -25,4 +24,4 @@ client.on('message', message => {
     client.commands.get('./pp.js')?.execute(message, args);
 });
 
-client.login('ODA2MDg0ODUzNTA1MzI3MTE0.YBkTBQ.Lkg6XTHf2vzXdPDXy6sUcS_TlP0');
+client.login('token');
