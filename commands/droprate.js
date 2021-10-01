@@ -1,16 +1,16 @@
 const title = 'The likeliness of you finding ';
-const footer = 'Rusty made by sunglasses#0420, Information gathered from rustlabs.com';
+const footer = 'Rusty made by sunglasses#0420, Information gathered from rustlabs.com ( NOTE: THESE ARE VANILLA VALUES )';
 const icon1 = 'https://i.redd.it/gzrqicukid0z.jpg';
 const color = 0x272a21
 
 module.exports = {
     name : 'droprate',
-    description : 'Tells you the most likely places you will find a gun',
+    description : 'Information on where you can find a certain weapon / tool in Rust.',
     execute(message, args) {
         if(!args.length) return;
         const helpembed = {
             color : color,
-            title : 'List of all droprate arguments. EX : >droprate ak',
+            title : 'List of all droprate arguments. EX : .droprate ak',
             fields : [
                 {
                     name : 'Assault Rifle',
