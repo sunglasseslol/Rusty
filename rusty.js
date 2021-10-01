@@ -12,7 +12,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Rusty is online!');
-    console.log('test');
+    console.log('tes');
 });
  
 client.on('message', message => {
