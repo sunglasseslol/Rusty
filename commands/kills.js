@@ -26,5 +26,6 @@ module.exports = {
                 
         }
         getPosts();
+        console.log("Function Ran");
     }
 }   
