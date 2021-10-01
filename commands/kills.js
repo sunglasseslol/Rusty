@@ -21,6 +21,7 @@ module.exports = {
                     res.json()
                     let data = JSON.stringify(res);
                     message.channel.send(data)
+                    .catch(console.error)
                 }) 
                 .then(posts => console.log(posts))
                 .catch(console.error);
