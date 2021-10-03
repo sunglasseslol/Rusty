@@ -18,8 +18,8 @@ module.exports = {
         function getPosts () {
             return fetch(url)
                 .then(res => {
-                    res.json()
-                    let data = JSON.stringify(res);
+                    let data = JSON.stringify(res)
+                    console.log(res)
                     message.channel.send(data)
                     .catch(console.error)
                 }) 
