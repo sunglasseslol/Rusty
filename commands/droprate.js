@@ -18,11 +18,11 @@ module.exports = {
                 },
                 {
                     name : 'MP5A4',
-                    value : 'mp5, mp5a4'
+                    value : 'mp5, mp5a4, mp'
                 },
                 {
                     name : 'L96',
-                    value : 'l96'
+                    value : 'l96, l9'
                 },
                 {
                     name : 'Double Barrel Shotgun',
@@ -30,11 +30,11 @@ module.exports = {
                 },
                 {
                     name : 'Custom SMG',
-                    value : 'smg, custom smg'
+                    value : 'smg, custom smg, custom'
                 },
                 {
                     name : 'Bolt Action Sniper',
-                    value : 'bolt, bolt action sniper'
+                    value : 'bolt, bolt action sniper, bolty'
                 },
                 {
                     name : 'M39',
@@ -54,7 +54,7 @@ module.exports = {
                 },
                 {
                     name : 'Semi-Automatic-Rifle',
-                    value : 'sar, semi auto rifle, semi automatic rifle'
+                    value : 'sar, semi auto rifle, semi automatic rifle, semi'
                 },
                 {
                     name : 'Revolver',
@@ -791,7 +791,7 @@ module.exports = {
             .then(console.log(mp5embed))
             .catch(console.error);
         }
-        if(args[0] === 'l96') {
+        if(args[0] === 'l96' || args[0] === 'l9') {
             message.channel.send({embed : l96embed})
             .then(console.log(l96embed))
             .catch(console.error);
@@ -806,7 +806,7 @@ module.exports = {
             .then(console.log(customsmgembed))
             .catch(console.error);
         }
-        if(args[0] === 'bolt' || args[0] === 'bolt' && args[1] === 'action' && args[2] === 'sniper') {
+        if(args[0] === 'bolt' || args[0] === 'bolt' && args[1] === 'action' && args[2] === 'sniper' || args[0] === 'bolty') {
             message.channel.send({embed : boltembed})
             .then(console.log(boltembed))
             .catch(console.error);
@@ -831,7 +831,7 @@ module.exports = {
             .then(console.log(pythonembed))
             .catch(console.error);
         }
-        if(args[0] == 'sar' || args[0] == 'semi' && args[1] == 'automatic' && args[2] == 'rifle' || args[0] == 'semi' && args[1] == 'auto' && args[2] == 'rifle') {
+        if(args[0] == 'sar' || args[0] == 'semi' && args[1] == 'automatic' && args[2] == 'rifle' || args[0] == 'semi' && args[1] == 'auto' && args[2] == 'rifle' || args[0] === 'semi') {
             message.channel.send({embed : sarembed})
             .then(console.log(sarembed))
             .catch(console.error);
