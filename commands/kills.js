@@ -14,19 +14,18 @@ module.exports = {
         if(isNaN(args[0])) return;
         if(args[0].length != 17) return;
         console.log('idgiven: ' + args);
-        let url = 'http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=252490&key=4A3DA3C2CEB5617EF8660D9A09FC39EB&steamid=' + args;
-        function getPosts () {
+        let url = process.env.APIGETSTATS + args
+        function get() {
             return fetch(url)
-                .then(res => {
-                    let data = JSON.stringify(res)
-                    console.log(res)
+                .then(async res => {
+                    let data = JSON.stringify(await res.json())
+                    console.log(data)
                     message.channel.send(data)
                     .catch(console.error)
                 }) 
-                .then(posts => console.log(posts))
                 .catch(console.error);
                 
         }
-        getPosts();
+        get();
     }
 }   
